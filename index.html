@@ -313,7 +313,7 @@
                         <div class="mb-5">
                             <p class="text-sm font-bold text-white-400 py-2">عنوان الدفع</p>
                             <div class="bg-gray-700/50 p-3 rounded-lg flex items-center justify-between">
-                                <span id="usdtAddress" class="font-mono text-xs truncate text-center flex-grow">TXD4oMhVRtfxekSoVjbkeub2SRxfRvxT1n
+                                <span id="usdtAddress" class="font-mono text-xs truncate text-center flex-grow">TB8Zixr6cDDHj7eTGYqP1g89jivjFAfS3d
                                 </span>
                                 <button onclick="copyAddress()" class="text-purple-400 hover:text-purple-300 ml-2">
                                     <i class="far fa-copy"></i>
@@ -752,8 +752,8 @@ document.getElementById('confirmWithdraw').addEventListener('click', async () =>
   try {
  
     // Update UI with payment details: address, QR code, etc.
-    document.getElementById('usdtAddress').textContent = "TXD4oMhVRtfxekSoVjbkeub2SRxfRvxT1n";
-     QRCode.toCanvas(document.getElementById('qrcode'), "TXD4oMhVRtfxekSoVjbkeub2SRxfRvxT1n", { width: 128 });
+    document.getElementById('usdtAddress').textContent = "TB8Zixr6cDDHj7eTGYqP1g89jivjFAfS3d";
+     QRCode.toCanvas(document.getElementById('qrcode'), "TB8Zixr6cDDHj7eTGYqP1g89jivjFAfS3d", { width: 128 });
     document.getElementById('withdrawModal').classList.add('hidden');
     document.getElementById('paymentModal').classList.remove('hidden');
     document.getElementById('confirmWithdraw').removeAttribute('disabled');
@@ -1377,6 +1377,7 @@ window.cancelPayment = cancelPayment;
 
 </body>
 </html>
+
 
 
 
